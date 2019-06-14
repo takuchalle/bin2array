@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	file, err := os.Open("main.go")
+	file, err := os.Open(os.Args[1])
 	handleError(err)
 
 	info, _ := file.Stat()
